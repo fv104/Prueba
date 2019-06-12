@@ -1,0 +1,27 @@
+
+$background-grey: #eaecef;
+$background-grey-2: #d2d4d7;
+$bigfinite-blue: #327aff;
+$widget-color: #888888;
+$x-color: #e3e5e8;
+
+html {
+    height: 100vh;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+
+#app, .content {
+    height: 100%;
+}
+
+@import './normalize.css';
+@import './style_components/navbar.scss';
+@import './style_components/left-panel.scss';
+@import 'style_components/container';
+@import './style_components/right-panel.scss';
+@import './style_components/widgets.scss';
+

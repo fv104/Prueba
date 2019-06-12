@@ -1,0 +1,43 @@
+
+
+.left-panel {
+    box-sizing: border-box;
+    height: calc(100% - 80px);
+    float: left;
+    width: 15%;
+}
+
+
+.left-button {
+    background-color: $background-grey;
+    border: 1px solid white;
+    display: block;
+    font-size: 0.8em;
+    height: 30px;
+    text-align: left;
+    width:100%;
+
+}
+
+.add-canvas {
+    button, input {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100%;
+    }
+    button {
+        background-color: $bigfinite-blue;
+        color: white;
+        width: 30%;
+    }
+    input {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .left-panel {
+      height: auto;
+      width: 100%;
+    }
+  }

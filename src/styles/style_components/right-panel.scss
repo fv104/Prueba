@@ -1,0 +1,36 @@
+.right-panel {
+    background-color: white;
+    float: left;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    .above-widget {
+        background-color: $background-grey;
+        height: 30px;
+        padding-top: 8px;
+        position: relative;
+        .widget-header {
+            border-bottom: 2px solid $bigfinite-blue;
+            color: $widget-color;
+            padding-bottom: 2px;
+            position: absolute;
+            left: 10px;
+        }
+        input {
+            position: absolute;
+            right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .right-panel {
+        height: 300px;
+        width: 100%;
+    }
+    .above-widget {
+        input {
+            margin-right: 10px;
+        }
+    }
+}

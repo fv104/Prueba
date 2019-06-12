@@ -1,0 +1,68 @@
+.contain {
+    background-color: $background-grey;
+    box-sizing: border-box;
+    float: left;
+    width: 85%;
+    height: 100%;
+}
+
+.name {
+    min-height: 20px;
+}
+
+.target {
+    background-color: white;
+    float: left;
+    height: 60%;
+    margin: 50px 10px 0;
+    width: 73%;
+}
+
+.contain-button {
+    padding-left: 10px;
+    padding-top: 10px;
+    position: absolute;
+}
+
+.buttons {
+    margin-left: 75px;
+    button {
+        background-color: blue;
+        color: white;
+        margin-right: 5px;
+    }
+}
+
+.container {
+    outline: 2px solid $background-grey-2;
+    position: relative; z-index: 1;
+}
+ .container::before {
+    position: absolute; z-index: 1000;
+    top: 0; bottom: 0; right: 0; left: 0;
+    background:
+       linear-gradient(to top right,
+          transparent calc(50% - 1px), $background-grey-2 calc(50% - 1px),
+          $background-grey-2 calc(50% + 1px), transparent calc(50% + 1px)),
+       linear-gradient(to bottom right,
+          transparent calc(50% - 1px), $background-grey-2 calc(50% - 1px),
+          $background-grey-2 calc(50% + 1px), transparent calc(50% + 1px)),
+          $x-color;
+       content: "";
+ }
+
+ @media only screen and (max-width: 1180px) {
+    .canvas {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .contain {
+        width: 100%;
+    }
+    .buttons {
+      display: block;
+      margin: 0;
+    }
+  }

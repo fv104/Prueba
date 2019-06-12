@@ -1,0 +1,44 @@
+
+.widget {
+    background: linear-gradient($background-grey, $widget-color);
+    box-shadow: 5px 5px $background-grey;
+    cursor: pointer;
+    display: inline-block;
+    height: 25%;
+    margin: 10px 10px 15px;
+    min-height: 215px;
+    max-width: 120px;
+    position: relative;
+    width: 40%;
+    z-index: 1001;
+}
+
+.widget-bottom {
+    background-color: white;
+    border-left: 1px solid $background-grey;
+    bottom: 0;
+    color: $widget-color;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    .fa-bookmark {
+        margin-right: 30px;
+    }
+}
+
+.graph-type {
+    bottom: 50px;
+    color: white;
+    font-size: 25px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.chart-icon {
+    font-size: 65px;
+    position: absolute;
+    text-align: center;
+    top: 45px;
+    width: 100%;
+}

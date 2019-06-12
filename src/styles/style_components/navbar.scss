@@ -1,0 +1,50 @@
+
+nav {
+  background-color: white;
+  height: 40px;
+  padding: 20px;
+  position: relative;
+}
+
+.dash-icons {
+  position: absolute;
+  right: 50px;
+  .fa-envelope, .fa-bell, .dash-pipe  {
+    font-size: 1.4em;
+    margin-right: 50px;
+    vertical-align: super;
+    z-index: 10000;
+  }
+  .fa-user-circle {
+    font-size: 3em;
+  }
+}
+
+
+.notification-box, .notification-box-2 {
+  color: white;
+  height: 20px;
+  width: 20px;
+  padding: 5px 0 0 7px;
+  position: absolute;
+  background-color:$bigfinite-blue;
+}
+
+.notification-box{
+  left: 70px;
+  bottom: 25px;
+}
+
+.notification-box-2 {
+  left: 140px;
+  bottom: 25px;
+}
+
+.bigfinite-logo {
+  color: $bigfinite-blue;
+  font-size: 2em;
+  margin-right: 20px;
+  .big {
+    font-weight: 600;
+  }
+}
